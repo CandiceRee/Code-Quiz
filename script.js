@@ -168,7 +168,7 @@ if (holdInterval===0){
         }
     },1000);
 }
-CanvasRenderingContext2D (questionindex);
+render(questionindex);
 });
 
 //Questions and choices on page 
