@@ -1,0 +1,274 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+
+
+background-color: turquoise;
+background-image: url(Background\ Image.jpg);
+background-size: 100px 50px;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    height:500px;
+    border: 1px solid goldenrod;
+    background-color: turquoise;
+    padding:10px;
+    margin:50px;
+    margin-bottom: 0px;
+}
+
+/*---Buttons---*/
+
+button{
+    border-radius: 8px;
+}
+
+#startTime{
+    background-color: turquoise;
+    padding:15px 32px;
+    font-size:20px;
+    color: goldenrod;
+}
+
+#Submit{
+    background-color: turquoise;
+    padding:15px 32px;
+    font-size:20px;
+    color:goldenrod;
+    margin:45px;
+}
+
+#goHome{
+    background-color: turquoise;
+    padding:10px;
+    font-size:20px;
+    color:goldenrod;
+}
+
+#clear{
+    background-color: turquoise;
+    padding:10px;
+    font-size: 20px;
+    color:goldenrod;
+}
+
+#btn-container{
+    text-align:center;
+    padding-bottom:15px;
+}
+
+/*---Links---*/
+
+a:link{
+    color:turquoise;
+    text-decoration:none;
+}
+
+a:visited{
+  color:turquoise;
+  text-decoration: none;  
+}
+
+a:hover{
+    color:powderblue;
+    text-decoration: none;
+}
+
+#questionsDiv{
+    margin:20px;
+    font-size: 20px;
+    text-align:center;
+}
+
+#currentTime{
+    float: right;
+}
+
+textarea{
+    width: 90%;
+    margin: 20px;
+}
+
+label{
+    margin-right: 10px;
+}
+
+input{
+    margin-bottom: 20px;
+    width: 15%;
+    border:1px solid paleturquoise;
+}
+
+h1{
+    text-align:center;
+    font-size:75px;
+    padding: 10px 10px 20px 10px;
+    color:goldenrod;
+    background-color: turquoise;
+    text-shadow: -3px -3px 0 powderblue, 1px -3px 0 powderblue, -3px 3px 0 powderblue, 3px 3px 0 powderblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    font-size: 18px;
+    text-align:center;
+    line-height:25px;
+}
+
+#titleline{
+    border:none;
+    max-width: 650px;
+    height: 50px;
+    margin-top:0;
+    border-bottom: 1px solid goldenrod;
+    box-shadow: 0 20px 20px -20px powderblue;
+    margin: -50px auto 10px;
+    margin-bottom: 15px;
+}
+
+#highScore{
+    height:280px;
+    overflow:hidden;
+    overflow-y:auto;
+    letter-spacing:10px;
+}
+
+/*Scroll Bar*/
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background: paleturquoise;
+}
+
+::-webkit-scrollbar-thumb{
+    background: mediumturquoise;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: darkturquoise;
+}
+
+#highscore-container{
+    width:100%;
+}
+
+li{
+    background-color: turquoise;
+    margin-top: 10px;
+    padding: 5px 15px;
+    font-size:18px;
+    color:goldenrod;
+    border:solid 1px powderblue;
+    text-align:left;
+}
+
+#createDiv{
+    margin-top: 20px;
+    border-top: 1px solid powderblue;
+    text-align:center;
+    padding-top: 10px;
+}
+
+#createP{
+    margin:15px;
+    font-size:18px;
+}
+
+#createLabel,
+#createInput{
+    text-align: center;
+}
+
+.footer-container{
+    width:500px;
+    margin: 0 auto;
+    padding:10px;
+}
+
+footer{
+    padding: 10px 0;
+    font-size:12px;
+    color:paleturquoise;
+    text-align: center;
+    background:turquoise;
+    border-top: 4px solid lightblue;
+    border-left: 1px solid powderblue;
+    border-right:1px solid powderblue;
+    border-bottom: 1px solid powderblue;
+}
+
+footer h1{
+    font-size: 25px;
+    text-shadow: -1px -1px 0 powderblue, 1px -1px 0 powderblue, 3px 3px 0 powderblue;
+}
+
+footer a:link{
+    color:mediumturquoise;
+    text-decoration: none;
+}
+
+footer a:visited{
+    color:mediumturquoise;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color:powderblue;
+    text-decoration: none;
+}
+
+/*Responsive Media Queries*/
+
+/*Max-width: 786ps(Tablets)*/
+@media screen and (max-width:786px){
+    body{
+        max-width: 786px;
+    }
+    
+    a{
+        margin: left 20%;
+    }
+}
+
+/*Max-Width:640px (Phones) */
+@media screen and (max-width:640px){
+    body{
+        min-width:360px;
+    }
+    #wrapper{
+        width:350px;
+        margin:10px;
+        margin-bottom:0px;
+    }
+
+    footer{
+        width:370px;
+        margin:10px;
+        margin-top:0px;
+    }
+
+    .footer-container{
+        max-width:330px;
+    }
+
+    footer h1{
+        font-size:20px;
+    }
+    
+    a{
+        margin-left:0%;
+    }
+
+    h1{
+        font-size: 55px;
+    }
+}
